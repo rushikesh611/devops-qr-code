@@ -15,4 +15,5 @@ jobs:
 
       - name: Push Docker image
         run: |
+          docker login -u rushikesh611 -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push rushikesh611/devops-qr-code-api:latest
